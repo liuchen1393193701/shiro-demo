@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lc.dao.UserDAO">
+    <select id="getPasswordByUserName" resultType="String" parameterType="String">
+        SELECT password from users WHERE username=#{userName}
+    </select>
+    <select id="getRoleNameByUserName" resultType="String" parameterType="String">
+        select role_name from user_roles where username=#{userName}
+    </select>
+    <select id="getPermissionNamesByUserName" resultType="String" parameterType="String">
+        select RP.permission
+        from user_roles UR INNER JOIN roles_permissions RP ON UR.role_name=RP.role_name
+        where UR.username=#{userName}
+    </select>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shirodemo1" />
+        <module name="shiro-demo4" />
+        <module name="shiro-demo3" />
+        <module name="shiro-demo2" />
+        <module name="shirossm" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
